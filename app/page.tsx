@@ -9,17 +9,25 @@ export default function Home() {
       <CardHeader>
         <CardTitle>URL : /</CardTitle>
       </CardHeader>
-      <CardContent>
-
+      <CardContent className="flex flex-col gap-4">
         <Link
-          href="/admin"
+          href="/admin/citations/1"
           className={buttonVariants({ size: "lg", variant: "outline" })}
         >
-          /admin
+          Citation
         </Link>
-
-        <Button>Bonjour</Button>
-        <Input placeholder="tapez votre texte ici" />
+        <Link
+          href="/admin/citations/2"
+          className={buttonVariants({ size: "lg", variant: "outline" })}
+        >
+        Citation 2
+        </Link>
+                <Link
+          href="/admin/citations/3"
+          className={buttonVariants({ size: "lg", variant: "outline" })}
+        >
+        Citation 3
+        </Link>
       </CardContent>
     </Card>
   );
